@@ -1,0 +1,22 @@
+@model IEnumerable<Guest>
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      <ul class="list-group">
+          @foreach (var guest in Model){
+              <li class="list-group-item">@guest.Name @guest.Title @guest.Message</li>
+          }
+      </ul>
+</div>
+</body>
+</html>

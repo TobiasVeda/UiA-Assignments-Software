@@ -1,0 +1,38 @@
+@model Guest
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      
+    <form method="post" class="form-control">
+        <label asp-for="Name"></label>
+        <input id="Name" asp-for="Name" required="required" class="form-control"/>
+        <span asp-validation-for="Name"></span>
+        <br/>
+        
+        <label asp-for="Title"></label>
+        <input id="Title" asp-for="Title" required="required" minlength="5" maxlength="50" class="form-control"/>
+        <span asp-validation-for="Title"></span>
+        <br/>
+        
+        <label asp-for="Message"></label>
+        <textarea id="Message" asp-for="Message" required="required" minlength="20" maxlength="200" class="form-control"></textarea>
+        <span asp-validation-for="Message"></span>
+        <br/>
+        
+        <input type="submit" id="Submit" value="Add Guest" class="btn btn-primary"/>
+    </form>
+
+    
+    
+</div>
+</body>
+</html>
