@@ -1,0 +1,29 @@
+.flex_container {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.image {
+    width: 30vw;
+    border-radius: 2vh;
+    margin: 5vh;
+}
+#colortxt {
+    background-image: url(../img/rainbow.gif);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.red_border {
+    border-left: 1.5px solid red;
+}
+.blue_border {
+    border-left: 1.5px solid blue;
+}
+.yellow_border {
+    border-left: 1.75px solid yellow;
+}
+.green_border {
+    border-left: 1.5px solid green;
+}
