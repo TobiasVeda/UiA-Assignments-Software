@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/calculator.css" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+		<div class="calc_container">
+			<input class="form-control" type="text" id="display" readonly />
+			<table>
+				<tr>
+					<td><button id="reset" class="btn btn-outline-danger" value="reset">C</button></td>
+					<td><button id="clear" class="btn btn-outline-danger" value="clear">CE</button></td>
+					<td><button id="back" class="btn btn-outline-danger" value="back">&lt;-</button></td>
+					<td><button id="equals" class="btn btn-outline-success" value="=">=</button></td>
+				</tr>
+				<tr>
+					<td><button id="seven" class="btn btn-outline-secondary" value="7" onclick="add_number(this.value)">7</button></td>
+					<td><button id="eight" class="btn btn-outline-secondary" value="8" onclick="add_number(this.value)">8</button></td>
+					<td><button id="nine" class="btn btn-outline-secondary" value="9" onclick="add_number(this.value)">9</button></td>
+					<td><button id="divide" class="btn btn-outline-primary" value="/" onclick="set_operator(this.value)">/</button></td>
+				</tr>
+				<tr>
+					<td><button id="four" class="btn btn-outline-secondary" value="4" onclick="add_number(this.value)">4</button></td>
+					<td><button id="five" class="btn btn-outline-secondary" value="5" onclick="add_number(this.value)">5</button></td>
+					<td><button id="six" class="btn btn-outline-secondary" value="6" onclick="add_number(this.value)">6</button></td>
+					<td><button id="multiply" class="btn btn-outline-primary" value="*" onclick="set_operator(this.value)">*</button></td>
+				</tr>
+				<tr>
+					<td><button id="one" class="btn btn-outline-secondary" value="1" onclick="add_number(this.value)">1</button></td>
+					<td><button id="two" class="btn btn-outline-secondary" value="2" onclick="add_number(this.value)">2</button></td>
+					<td><button id="three" class="btn btn-outline-secondary" value="3" onclick="add_number(this.value)">3</button></td>
+					<td><button id="minus" class="btn btn-outline-primary" value="-" onclick="set_operator(this.value)">-</button></td>
+				</tr>
+				<tr>
+					<td colspan="2"><button id="zero" class="btn btn-outline-secondary" value="0" onclick="add_number(this.value)">0</button></td>
+					<td><button id="comma" class="btn btn-outline-secondary" value="." onclick="add_number(this.value)">,</button></td>
+					<td><button id="plus" class="btn btn-outline-primary" value="+" onclick="set_operator(this.value)">+</button></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="js/calculator.js"></script>
+</html>

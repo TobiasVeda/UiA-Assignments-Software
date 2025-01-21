@@ -1,0 +1,16 @@
+.calc_container {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+#display {
+    text-align: right !important;
+}
+#zero {
+    width: 157px !important;
+}
+button {
+    margin: 2px !important;
+    width: 75px !important;
+    height: 75px !important;
+}
