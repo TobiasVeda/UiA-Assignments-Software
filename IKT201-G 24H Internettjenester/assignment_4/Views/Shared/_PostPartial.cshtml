@@ -1,0 +1,21 @@
+@model Blog
+
+<table>
+    <tr>
+        <td class="Nickname">@Model.Nickname</td>
+        <td class="Title">@Model.Title</td>
+        <td class="Time">@Model.Time.ToString("dd.MM.yyyy")</td>
+        <td class="Edit">
+            <form method="post">
+                <input name="i_id" value="@Model.Id" hidden="hidden"/>    
+                <input id="Submit" type="submit" value="Edit Post"/>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td class="Summary" colspan="4">@Model.Summary</td>
+    </tr>
+    <tr>
+        <td class="Content" colspan="4">@Model.Content</td>
+    </tr>
+</table>

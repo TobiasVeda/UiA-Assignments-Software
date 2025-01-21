@@ -1,0 +1,50 @@
+@model Blog
+
+@{
+    ViewData["Title"] = "Add Blogpost";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+
+<h2>Add Blogpost</h2>
+
+<form method="post">
+    
+    <label asp-for="Nickname"></label>
+    <input asp-for="Nickname" id="Nickname" readonly value="@ViewBag.Nickname"/>
+    <span asp-validation-for="Nickname"></span>
+    <br/>
+
+    <label asp-for="Title"></label>
+    <input asp-for="Title" id="Title"/>
+    <span asp-validation-for="Title"></span>
+    <br/>
+
+    <label asp-for="Summary"></label>
+    <textarea asp-for="Summary" id="Summary"></textarea>
+    <span asp-validation-for="Summary"></span>
+    <br/>
+
+    <label asp-for="Content"></label>
+    <textarea asp-for="Content" id="Content"></textarea>
+    <span asp-validation-for="Content"></span>
+    <br/>
+    
+    <input asp-for="Time" id="Time" readonly/>
+    <span asp-validation-for="Time"></span>
+    <br/>
+
+    <input id="Submit" type="submit" value="Add Blogpost" disabled="disabled"/>
+</form>
+
+
+</body>
+<script src="~/js/script.js"></script>
+</html>

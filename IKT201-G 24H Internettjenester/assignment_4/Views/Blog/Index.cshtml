@@ -1,0 +1,25 @@
+@model IEnumerable<Blog>
+
+@{
+    ViewData["Title"] = "View Blogpost";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+      
+    @foreach (var blog in Model){
+      
+        <partial name="_PostPartial" model="blog"/>
+     
+    }
+      
+</div>
+</body>
+</html>
