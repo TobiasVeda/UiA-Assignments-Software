@@ -1,0 +1,8 @@
+fingerprint matching:
+orb: time used: 0.3213682174682617s, memory used: 6.930432mb, CPU time: 0.5s
+sift: time used: 1.342041254043579s, memory used: 4.616192mb, CPU time: 3.15625s
+
+uia campus matching:
+orb: time used: 0.08127021789550781s, memory used: 2.21184mb, CPU time: 0.078125s
+sift: time used: 0.3007335662841797s, memory used: 1.327104mb, CPU time: 0.859375s
+
